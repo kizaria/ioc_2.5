@@ -12,6 +12,7 @@ public class Test {
                         "歌手:"+song.getSinger().getName()+"("+song.getSinger().getSex()+")"+"\n"+
                 "风格:"+song.getStyle().getName()
                 );
+        System.out.println("hot");
         /*UserController userController= (UserController) applicationContext.getBean("userController");
         userController.save();*/
 
