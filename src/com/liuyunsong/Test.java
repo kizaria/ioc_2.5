@@ -8,7 +8,7 @@ public class Test {
         String xmlPath="com/liuyunsong/bean.xml";
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext(xmlPath);
         Song song= (Song) applicationContext.getBean("Song");
-        System.out.println("歌曲名:"+song.getSongname()+"\n"+
+        System.out.println("歌曲名:"+song.getSongname()+"\n"+"cc"+
                         "歌手:"+song.getSinger().getName()+"("+song.getSinger().getSex()+")"+"\n"+
                 "风格:"+song.getStyle().getName()
                 );
