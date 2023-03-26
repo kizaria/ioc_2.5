@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Singer" class="com.liuyunsong.Singer">
+        <property name="name" value="王菲"></property>
+        <property name="sex" value="女"></property>
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="Style" class="com.liuyunsong.Style">
+        <!-- collaborators and configuration for this bean go here -->
+        <property name="name" value="流行"></property>
+    </bean>
+
+    <bean id="Song" class="com.liuyunsong.Song">
+        <property name="songname" value="匆匆那年"></property>
+        <property name="singer" ref="Singer"/>
+        <property name="style" ref="Style"></property>
+
+    </bean>
+
+</beans>
